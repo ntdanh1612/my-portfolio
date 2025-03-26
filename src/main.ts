@@ -19,6 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#demo" class="nav-link">Demo</a></li>
           <li><a href="#certificates" class="nav-link">Certificates</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
           <li><a href="/cv.docx" class="nav-link download-cv" download>Download CV</a></li>
@@ -297,6 +298,163 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </div>
   </section>
 
+  <!-- Demo Section -->
+  <section id="demo" class="demo">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Demo Apps</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Explore interactive demos showcasing components and features of my personal projects.
+      </p>
+      
+      <div class="demo-tabs" data-aos="fade-up" data-aos-delay="150">
+        <button class="demo-tab active" data-category="all">All</button>
+        <button class="demo-tab" data-category="ai">AI Components</button>
+        <button class="demo-tab" data-category="ui">UI Components</button>
+        <button class="demo-tab" data-category="data">Data Visualization</button>
+      </div>
+      
+      <div class="demo-grid">
+        <!-- AI Chat Component -->
+        <div class="demo-card glass" data-category="ai" data-aos="fade-up">
+          <div class="demo-card-header">
+            <span class="demo-card-category">AI Component</span>
+            <h3 class="demo-card-title">Conversational AI Chat</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-chat.png" alt="AI Chat Interface" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=Chat+Demo'">
+          </div>
+          <div class="demo-card-content">
+            <p>Interactive chatbot with natural language understanding capabilities for customer support and information retrieval.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">GPT-4</span>
+              <span class="demo-tag">LangChain</span>
+              <span class="demo-tag">RAG</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Image Recognition Component -->
+        <div class="demo-card glass" data-category="ai" data-aos="fade-up" data-aos-delay="100">
+          <div class="demo-card-header">
+            <span class="demo-card-category">AI Component</span>
+            <h3 class="demo-card-title">Image Recognition</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-vision.png" alt="Image Recognition Demo" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=Vision+Demo'">
+          </div>
+          <div class="demo-card-content">
+            <p>Computer vision model that can identify objects and scenes in uploaded images with high accuracy.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">PyTorch</span>
+              <span class="demo-tag">CNN</span>
+              <span class="demo-tag">Computer Vision</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Data Dashboard Component -->
+        <div class="demo-card glass" data-category="data" data-aos="fade-up" data-aos-delay="200">
+          <div class="demo-card-header">
+            <span class="demo-card-category">Data Visualization</span>
+            <h3 class="demo-card-title">Interactive Dashboard</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-dashboard.png" alt="Dashboard Demo" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=Dashboard+Demo'">
+          </div>
+          <div class="demo-card-content">
+            <p>Real-time analytics dashboard with interactive charts and data filtering capabilities.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">D3.js</span>
+              <span class="demo-tag">Plotly</span>
+              <span class="demo-tag">React</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- UI Component Library -->
+        <div class="demo-card glass" data-category="ui" data-aos="fade-up" data-aos-delay="300">
+          <div class="demo-card-header">
+            <span class="demo-card-category">UI Component</span>
+            <h3 class="demo-card-title">Component Library</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-ui.png" alt="UI Component Library" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=UI+Components'">
+          </div>
+          <div class="demo-card-content">
+            <p>Collection of reusable UI components built with accessibility and modern design principles in mind.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">React</span>
+              <span class="demo-tag">Storybook</span>
+              <span class="demo-tag">TypeScript</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Form Builder -->
+        <div class="demo-card glass" data-category="ui" data-aos="fade-up" data-aos-delay="400">
+          <div class="demo-card-header">
+            <span class="demo-card-category">UI Component</span>
+            <h3 class="demo-card-title">Interactive Form Builder</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-form.png" alt="Form Builder Demo" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=Form+Builder'">
+          </div>
+          <div class="demo-card-content">
+            <p>Drag-and-drop form builder with validation and responsive design capabilities.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">Vue.js</span>
+              <span class="demo-tag">Draggable</span>
+              <span class="demo-tag">Vuelidate</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Data Prediction Model -->
+        <div class="demo-card glass" data-category="data" data-aos="fade-up" data-aos-delay="500">
+          <div class="demo-card-header">
+            <span class="demo-card-category">Data Visualization</span>
+            <h3 class="demo-card-title">Predictive Analytics</h3>
+          </div>
+          <div class="demo-card-preview">
+            <img src="/images/demo-prediction.png" alt="Predictive Analytics Demo" class="demo-image" onerror="this.src='https://placehold.co/600x400/6366f1/white?text=Predictive+Analytics'">
+          </div>
+          <div class="demo-card-content">
+            <p>Interactive demo of predictive models with real-time data input and visualization of results.</p>
+            <div class="demo-card-tags">
+              <span class="demo-tag">TensorFlow.js</span>
+              <span class="demo-tag">Chart.js</span>
+              <span class="demo-tag">ML Models</span>
+            </div>
+            <div class="demo-card-actions">
+              <button class="demo-btn" onclick="alert('Demo will be available soon!')">Launch Demo</button>
+              <button class="demo-btn secondary" onclick="window.open('https://github.com', '_blank')">View Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Certificates Section -->
   <section id="certificates" class="certificates">
     <div class="container">
@@ -511,5 +669,33 @@ backToTopButton.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
+  })
+})
+
+// Demo section category filtering
+const demoTabs = document.querySelectorAll<HTMLButtonElement>('.demo-tab')
+const demoCards = document.querySelectorAll<HTMLDivElement>('.demo-card')
+
+demoTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Update active tab
+    demoTabs.forEach(t => t.classList.remove('active'))
+    tab.classList.add('active')
+    
+    // Filter cards
+    const category = tab.getAttribute('data-category')
+    
+    demoCards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'flex'
+        // Reset animation for better UX
+        card.style.opacity = '0'
+        setTimeout(() => {
+          card.style.opacity = '1'
+        }, 10)
+      } else {
+        card.style.display = 'none'
+      }
+    })
   })
 })
