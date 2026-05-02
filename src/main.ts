@@ -612,14 +612,13 @@ mobileMenuBtn.addEventListener('click', () => {
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(this: HTMLAnchorElement, e) {
+  anchor.addEventListener('click', (e) => {
     e.preventDefault()
-    const target = document.querySelector((this).getAttribute('href')!)
+    const target = document.querySelector((anchor as HTMLAnchorElement).getAttribute('href')!)
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth'
       })
-      // Close mobile menu if open
       if (window.innerWidth < 768) {
         navLinks.style.display = 'none'
       }
